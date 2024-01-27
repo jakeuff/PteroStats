@@ -138,3 +138,4 @@ If you having this issue, you can enable `log_error` on the config file and repo
 - [Pterodactyl Discord Server](https://discord.gg/pterodactyl)
 - [PteroBot Support Server](https://discord.gg/zv6maQRah3)
 - [PteroBot Support Server (Indonesia)](https://discord.gg/EYaFB7WSg6)
+
