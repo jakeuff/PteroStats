@@ -80,6 +80,17 @@ Please refer to [this website](https://discordjs.guide/preparations/adding-your-
 
 if you need help contact me on discord `Hirzi#8701` or join [our discord support server](https://discord.gg/zv6maQRah3)
 
+The bot can also be run using the Dockerfile
+```commandline
+docker run \
+  -v <HOST_FOLDER>:/pterostats_config/ \
+  benfugate/pterostats
+```
+The folder on your host machine containing your completed `config.yml` file should be mounted to the container directory
+`/pterostats_config/`. The `config.yml` file will be reloaded from this directory every time the container is started.
+
+If the `config.yml` is not present in your `<HOST_FOLDER>`, it will be generated during the first run.
+
 ### Using Custom Emoji
 1. type `\` in guild that has custom emoji you want
 
