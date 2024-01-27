@@ -22,10 +22,10 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: benfugate/pterostats:${{ steps.extract_branch.outputs.branch }}
+          tags: jakeuff/pterostats:${{ steps.extract_branch.outputs.branch }}
       - name: Build image and push to Docker Hub
         if: steps.extract_branch.outputs.branch == 'main'
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: benfugate/pterostats:latest
+          tags: jakeuff/pterostats:latest
